@@ -1,6 +1,6 @@
 @extends('base') 
 @section('main')
-<div class="row">
+<div class="row" style="margin-bottom: 50px;auto;display: block">
     <div class="col-sm-8 offset-sm-2">
         <br />
         <h3 class="display-5 text-center">Student Details</h3>

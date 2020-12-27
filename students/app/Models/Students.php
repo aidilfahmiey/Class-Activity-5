@@ -9,5 +9,5 @@ class Students extends Model
 {
     use HasFactory;
     protected $fillable = ['matricnum','name','gender','dob','citizenship','status','religion','active','years','ic','email'];
-    
+    public $timestamps = false;
 }

@@ -112,15 +112,15 @@ class StudentsController extends Controller
             'email'=>'required'
         ]);
         $students = Students::find($id);
-        $students->first_name =  $request->get('matricnum');
-        $students->last_name = $request->get('name');
-        $students->email = $request->get('gender');
-        $students->email = $request->get('dob');
-        $students->email = $request->get('citizenship');
-        $students->email = $request->get('religion');
-        $students->email = $request->get('active');
-        $students->email = $request->get('years');
-        $students->email = $request->get('ic');
+        $students->matricnum =  $request->get('matricnum');
+        $students->name = $request->get('name');
+        $students->gender = $request->get('gender');
+        $students->dob = $request->get('dob');
+        $students->citizenship = $request->get('citizenship');
+        $students->religion = $request->get('religion');
+        $students->active = $request->get('active');
+        $students->years = $request->get('years');
+        $students->ic = $request->get('ic');
         $students->email = $request->get('email');
 
         $students->save();

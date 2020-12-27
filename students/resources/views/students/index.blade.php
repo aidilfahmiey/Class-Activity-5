@@ -2,7 +2,7 @@
 @section('main')
 <div class="row">
 
-<div class="col-sm-12">
+<div class="col-sm-12" style="margin-bottom: 50px;auto;display: block">
   @if(session()->get('success'))
     <div class="alert alert-success text-center">
       {{ session()->get('success') }}  
@@ -17,7 +17,7 @@
     <thead>
         <tr>
           <th>No</th>
-          <th>Matric Number</th>
+          <th >Matric Number</th>
           <th>Name</th>
           <th>Gender</th>
           <th>Date of Birth</th>
@@ -35,10 +35,19 @@
         @foreach($students as $count => $student)
         <tr>
             <td>{{++$count}}</td>
-            <td><a href="{{ route('students.show',$student->id)}}">{{$student->matricnum}} {{$student->name}}
-              {{$student->gender}} {{$student->dob}} {{$student->citizenship}} {{$student->religion}} {{$student->active}}
-              {{$student->years}} {{$student->ic}} {{$student->email}}</a></td>
-
+            <td><a href="{{ route('students.show',$student->id)}}">{{$student->matricnum}} 
+              
+              </a></td>
+              <td>{{$student->name}}</td>
+              <td>{{$student->gender}} </td>
+              <td>{{$student->dob}}</td>
+              <td>{{$student->dob}}</td>
+              <td>{{$student->citizenship}}</td>
+              <td>{{$student->religion}}</td>
+              <td>{{$student->active}}</td>
+              <td>{{$student->years}}</td>
+              <td>{{$student->ic}}</td>
+              <td>{{$student->email}}</td>
             <td class="text-center">
                 <a href="{{ route('students.edit',$student->id)}}" class="btn btn-primary btn-block">Edit</a>
             </td>

@@ -1,7 +1,7 @@
 @extends('base') 
 @section('main')
 <div class="row">
-    <div class="col-sm-8 offset-sm-2">
+    <div class="col-sm-8 offset-sm-2" style="margin-bottom: 50px">
         <br />
         <h3 class="display-5 text-center">Update Student Details</h3>
         @if ($errors->any())
@@ -17,7 +17,7 @@
         <form method="post" action="{{ route('students.update', $students->id) }}">
             @method('PATCH') 
             @csrf
-            <div style="width: 25%;margin: auto;display: block;">
+            <div style="width: 50%;margin: auto;display: block;">
                 <div class="form-group">
                   <label for="matricnumber">Matric Number</label>
                   <input type="number" class="form-control" id="matricnum" name="matricnum" placeholder="Enter matric number" size="10"
@@ -25,7 +25,7 @@
                 </div>
               </div>
     
-             <div style="width: 25%;margin: auto;display: block;">
+             <div style="width: 50%;margin: auto;display: block;">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter name"
@@ -33,7 +33,7 @@
                 </div>
             </div>
     
-            <div style="width: 25%;margin: auto;display: block;">
+            <div style="width: 50%;margin: auto;display: block;">
                 <div class="form-group">
                     <label for="gender">Select Your Gender</label>
                     <select class="form-control" id="gender" name="gender" value="{{ $students->gender }}">
@@ -43,14 +43,14 @@
                 </div>
             </div>
     
-          <div style="width: 25%;margin: auto;display: block;">
+          <div style="width: 50%;margin: auto;display: block;">
           <div class="form-group">
             <label for="dob">Date of Birth</label>
             <input type="date" class="form-control" id="dob" name="dob" value="{{ $students->dob }}">
           </div>
         </div>
     
-          <div style="width: 25%;margin: auto;display: block;">
+          <div style="width: 50%;margin: auto;display: block;">
           <div class="form-group">
             <label for="citizenship">Citizenship</label>
             <input type="text" class="form-control" id="citizenship" name="citizenship" placeholder="Citizenship"
@@ -58,7 +58,7 @@
           </div>
         </div>
     
-        <div style="width: 25%;margin: auto;display: block;">
+        <div style="width: 50%;margin: auto;display: block;">
             <fieldset class="form-group">
               <label for="status">Status</label>
               <div class="form-check">
@@ -79,7 +79,7 @@
             </fieldset>
           </div>
     
-        <div style="width: 25%;margin: auto;display: block;">
+        <div style="width: 50%;margin: auto;display: block;">
             <div class="form-group">
               <label for="religion">Religion</label>
               <select class="form-control" id="religion" name="religion" value="{{ $students->religion }}">
@@ -91,7 +91,7 @@
             </div>
           </div>
     
-          <div style="width: 25%;margin: auto;display: block;">
+          <div style="width: 50%;margin: auto;display: block;">
             <fieldset class="form-group">
               <label for="active">Activeness</label>
               <div class="form-check">
@@ -112,7 +112,7 @@
             </fieldset>
           </div>
     
-          <div style="width: 25%;margin: auto;display: block;">
+          <div style="width: 50%;margin: auto;display: block;">
           <div class="form-group">
             <label for="years">Current Year</label>
             <input type="text" class="form-control" id="years" name="years" placeholder="First year"
@@ -120,7 +120,7 @@
           </div>
         </div>
     
-        <div style="width: 25%;margin: auto;display: block;">
+        <div style="width: 50%;margin: auto;display: block;">
             <div class="form-group">
               <label for="ic">ID Number</label>
               <input type="number" class="form-control" id="ic" name="ic" placeholder="Enter ID number"
@@ -128,7 +128,7 @@
             </div>
           </div>
     
-          <div style="width: 25%;margin: auto;display: block;">
+          <div style="width: 50%;margin: auto;display: block;">
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Enter email"
