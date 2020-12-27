@@ -15,18 +15,49 @@
         <br /> 
         @endif
             <div class="form-group">
-                <label for="first_name">First Name</label>
-                <input type="text" class="form-control" name="first_name" value="{{ $student->first_name }}" readonly>
+                <label for="matricnum">Matric Number</label>
+                <input type="number" class="form-control" name="matricnum" value="{{ $student->matricnum }}" readonly>
             </div>
             <div class="form-group">
-                <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" name="last_name" value="{{ $student->last_name }}" readonly>
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" value="{{ $student->name }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" class="form-control" name="gender" value="{{ $student->gender }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" name="dob" value="{{ $student->dob }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="citizenship">Citizenship</label>
+                <input type="text" class="form-control" name="citizenship" value="{{ $student->citizenship }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="religion">Religion</label>
+                <input type="text" class="form-control" name="religion" value="{{ $student->religion }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="active">Activeness</label>
+                <input type="text" class="form-control" name="active" value="{{ $student->active }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="years">Current Years</label>
+                <input type="text" class="form-control" name="years" value="{{ $student->years }}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="ic">ID Number</label>
+                <input type="number" class="form-control" name="ic" value="{{ $student->ic }}" readonly>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" name="email" value="{{ $student->email }}" readonly>
+                <input type="email" class="form-control" name="email" value="{{ $student->email }}" readonly>
             </div>
+
+
             </form>
+
             <div class="text-center">
             <a href="{{ route('students.index')}}" class="btn btn-primary">Return</a>&nbsp;&nbsp;    
             </div>

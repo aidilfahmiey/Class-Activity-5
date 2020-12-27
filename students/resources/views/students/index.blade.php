@@ -17,7 +17,16 @@
     <thead>
         <tr>
           <th>No</th>
+          <th>Matric Number</th>
           <th>Name</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>Citizenship</th>
+          <th>Status</th>
+          <th>Religion</th>
+          <th>Activeness</th>
+          <th>Current Years</th>
+          <th>ID Number</th>
           <th>Email</th>
           <th colspan="2" class="text-center">Actions</th>
         </tr>
@@ -26,8 +35,10 @@
         @foreach($students as $count => $student)
         <tr>
             <td>{{++$count}}</td>
-            <td><a href="{{ route('students.show',$student->id)}}">{{$student->first_name}} {{$student->last_name}}</a></td>
-            <td>{{$student->email}}</td>
+            <td><a href="{{ route('students.show',$student->id)}}">{{$student->matricnum}} {{$student->name}}
+              {{$student->gender}} {{$student->dob}} {{$student->citizenship}} {{$student->religion}} {{$student->active}}
+              {{$student->years}} {{$student->ic}} {{$student->email}}</a></td>
+
             <td class="text-center">
                 <a href="{{ route('students.edit',$student->id)}}" class="btn btn-primary btn-block">Edit</a>
             </td>

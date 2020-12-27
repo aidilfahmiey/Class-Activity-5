@@ -52,14 +52,14 @@
 
       <div style="width: 25%;margin: auto;display: block;">
       <div class="form-group">
-        <label for="dob">Citizenship</label>
+        <label for="citizenship">Citizenship</label>
         <input type="text" class="form-control" id="citizenship" name="citizenship" placeholder="Citizenship">
       </div>
     </div>
 
     <div style="width: 25%;margin: auto;display: block;">
         <fieldset class="form-group">
-          <label for="dob">Status</label>
+          <label for="status">Status</label>
           <div class="form-check">
               
             <label class="form-check-label">
@@ -90,7 +90,7 @@
 
       <div style="width: 25%;margin: auto;display: block;">
         <fieldset class="form-group">
-          <label for="dob">Activeness</label>
+          <label for="active">Activeness</label>
           <div class="form-check">
               
             <label class="form-check-label">
@@ -109,7 +109,7 @@
 
       <div style="width: 25%;margin: auto;display: block;">
       <div class="form-group">
-        <label for="cyear">Current Year</label>
+        <label for="years">Current Year</label>
         <input type="text" class="form-control" id="years" name="years" placeholder="First year">
       </div>
     </div>
