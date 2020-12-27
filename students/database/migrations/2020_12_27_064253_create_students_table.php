@@ -26,6 +26,7 @@ class CreateStudentsTable extends Migration
         $table->string('years');
         $table->string('ic');
         $table->string('email');
+        $table->timestamps();
 
         });
     }

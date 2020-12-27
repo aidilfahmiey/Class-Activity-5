@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Students;
 
 const STUDENTS = '/students';
-class StudentController extends Controller
+class StudentsController extends Controller
 {
     /**
      * Display a listing of the resource.
